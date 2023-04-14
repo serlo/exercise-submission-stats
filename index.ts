@@ -79,7 +79,7 @@ app.post('/submit', async (req, res) => {
       typeof entityId == 'number' &&
       typeof revisionId == 'number' &&
       ['sc', 'mc', 'input', 'h5p'].includes(type) &&
-      ['right', 'wrong'].includes(result) &&
+      ['correct', 'wrong'].includes(result) &&
       typeof sessionId == 'string'
     ) {
       if (path.length < 1024 && sessionId.length < 64) {
